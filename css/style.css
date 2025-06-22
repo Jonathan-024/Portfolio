@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #0a66c2;
+    --dark-color: #1c1c1c;
+    --light-color: #f5f5f5;
+    --text-color: #333;
+    --accent-color: #ff6b6b;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: rgb(240, 240, 240);
+    color: rgb(1, 1, 83);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgb(232, 230, 230);
+    color: rgb(1, 1, 83);
+    position: relatives;
+    top: 0;
+}
+
+header .container_header {
+    background-color: rgb(232, 230, 230);
+    max-width: 60%;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(1, 1, 83);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: rgb(1, 1, 83);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* .nav-links li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: blue;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+} */
+
+/* .nav-links li a:hover::after {
+    width: 100%;
+} */
+
+/* .nav-links li a:hover: {
+    color: blue;
+} */
+
+.nav-links li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0011a7;
+}
+
+/* .nav-links li .cv::after {
+    background: none;
+} */
+
+.nav-links li .cv:hover {
+    border: 2px solid #0011a7;
+}
+
+.cv {
+    border: 2px solid rgb(1, 1, 83);
+    padding: 4px;
+}
+
+/* Main */
+main {
+    background-color: rgb(240, 240, 240);
+    color: rgb(1, 1, 83);
+}
+
+.container_main {
+    background-color: rgb(240, 240, 240);
+    max-width: 60%;
+    margin: auto;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_jonathan, .realisations, .connaissances, .accessibilite {
+    margin: 1rem 0 1rem 0;
+}
+
+.info_une {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+}
+
+.photo_profil {
+    width: 20%;
+    margin: 0.2rem 0 0 0;
+    border-radius: 50%;
+    display: flex;
+}
+
+.info_deux {
+    position: relative;
+    left: 2rem;
+}
+
+.nom {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info_trois {
+    
+}
+
+.liens_contact {
+    display: inline-block;
+    max-width: 20%;
+    padding: 0.5%;
+    position: relative;
+    top: 0.3rem;
+    /* border: 2px solid black; */
+}
+
+.liens_contact .links {
+    list-style: none;
+    display: flex;
+}
+
+.github_logo {
+    width: 25%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.github_logo:hover {
+    border: 1.5px solid rgb(240, 240, 240);
+}
+
+.email_logo {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    display: none;
+}
+
+.realisations {
+    display: flex;
+    height: 13rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connaissances {
+    display: flex;
+    height: 13rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projet_un, .projet_deux,  .projet_trois, .projet_quatre {
+    display: inline-block;
+    width: 22%;
+    height: 100%;
+    border: 2px solid rgb(1, 1, 83);
+}
+
+.projet_un:hover, .projet_deux:hover,  .projet_trois:hover, .projet_quatre:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-main);
+}
+
+form button {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #084f9c;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(232, 230, 230);
+    color: rgb(1, 1, 83);
+}
+
+.container_footer {
+    background-color: rgb(232, 230, 230);
+    max-width: 60%;
+    margin: auto;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}

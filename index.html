@@ -1,46 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio de Jonathan Museme - Développeur Web et Mobile" />
-    <meta name="keywords" content="Jonathan Museme" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <title>Jonathan Museme</title>
-</head>
-<body>
-    <!-- ========== Start Header ========== -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- ========== End Header ========== -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Museme Jonathan - Développeur Web et Mobile" />
+        <meta name="author" content="Jonathan Museme">
 
-    <!-- ========== Start Main ========== -->
-    <main>
-        <section id="accueil">
-            <h1>Jonathan Museme</h1>
-            <p>Développeur Web et Mobile</p>
-        </section>
-    </main>
-    <!-- ========== End Main ========== -->
+        <title>Jonathan Website</title>
 
-    <!-- ========== Start Footer ========== -->
-    <footer>
-        <p>Copyright 2025 Jonathan Museme</p>
-    </footer>
-    <!-- ========== End Footer ========== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
 
-    <!-- ========== Start Script ========== -->
-    <script src="script.js"></script>
-    <!-- ========== End Script ========== -->
-</body>
+    <body>
+        <!-- En-tête avec navigation -->
+        <header>
+            <div class="container_header">
+                <div id="logo">Jonathan</div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="documents/cv_jonathan_museme.docx" class="cv">Mon CV</a>
+                    </ul>
+                </nav>
+            </div>     
+        </header>
+        
+        <!-- Zone principale -->
+        <main>
+            <div class="container_main">
+                <!-- Section identité -->
+                <section id="identite" class="info_jonathan">
+                    <div class="info_une">
+                        <img src="images/profil_jona_m.jpg" alt="Ma photos profile" class="photo_profil">
+                        <div class="info_deux">
+                            <h1 class="nom">Jonathan Museme</h1>
+                            <div class="info_trois">
+                                <h1 class="profil">Développeur Web & Mobile</h1>
+                                <p class="presentation">Je suis un développeur des sites web et d'application mobile. 
+                                J’aime créer des sites modernes, rapides et interactifs.</p>
+                            </div>     
+                            <div class="liens_contact">
+                                <ul class="links">
+                                    <li><a href="https://github.com/Jonathan-024" target="_blank" class="github"><img src="images/github-mark.png" alt="Logo de GitHub" class="github_logo"></a></li>
+                                    <li><a href="mailto:1013jonathanm@gmail.com"><img src="images/email_logo.jpg" alt="Logo d'Email" class="email_logo"></a></li>
+                                    <!-- <li><a href="">Facebook</a></li> -->
+                                </ul>
+                            </div>                                                   
+                        </div>                    
+                    </div>
+
+
+                </section>
+
+                <!-- Section Projets -->
+                <section id="projets">
+                    <h1>Projets</h1>
+                    <div class="realisations">
+                        <article class="projet_un">
+
+                        </article>
+
+                        <article class="projet_deux">
+
+                        </article>
+                        
+                        <article class="projet_trois">
+
+                        </article>
+                        
+                        <article class="projet_quatre">
+
+                        </article>                        
+                    </div>                
+                </section>
+
+                <!-- Section Compétences -->
+                <section id="skills">
+                    <h1>Compétences</h1>
+                    <div class="connaissances">
+                        <article class="projet_un">
+
+                        </article>
+
+                        <article class="projet_deux">
+
+                        </article>
+                        
+                        <article class="projet_trois">
+
+                        </article>
+                        
+                        <article class="projet_quatre">
+
+                        </article>                        
+                    </div>         
+                </section>
+
+                <!-- Section Contact -->
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="nom" placeholder="Votre nom" required />
+                        <input type="email" name="email" placeholder="Votre email" required />
+                        <textarea name="message" placeholder="Votre message" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Pied de page -->
+        <footer>
+            <div class="container_footer">
+                <p>&copy; 2025 Jonathan Museme. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </body>
 </html>
