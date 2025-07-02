@@ -1,123 +1,103 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio de Museme Jonathan - Développeur Web et Mobile" />
-        <meta name="author" content="Jonathan Museme">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Jonathan Museme - Web and Mobile Developer" />
+    <meta name="author" content="Jonathan Museme" />
+    <title>Jonathan Website</title>
 
-        <title>Jonathan Website</title>
+    <!-- Stylesheets and Icons -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- JavaScript -->
+    <script defer src="js/theme.js"></script>
+    <script defer src="js/lang.js"></script>
+    <script defer src="js/form.js"></script>
     </head>
 
     <body>
-        <!-- En-tête avec navigation -->
-        <header>
-            <div class="container_header">
-                <div id="logo">Jonathan</div>
-                <nav class="navbar">
-                    <ul class="nav-links">
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="documents/cv_jonathan_museme.docx" class="cv">Mon CV</a>
-                    </ul>
-                </nav>
-            </div>     
+        <header class="header">
+            <nav class="navbar">
+                <a href="#about" class="logo">Jonathan</a>
+                <div class="nav-links">
+                    <a href="#projects" data-lang="projects" class="links">Projects</a>
+                    <a href="#skills" data-lang="skills" class="links">Skills</a>
+                    <a href="#contact" data-lang="contact" class="links">Contact</a>
+                    <a href="#" class="cv-button" data-lang="resume">Resume</a>
+                    <select id="theme-switcher" aria-label="Theme mode">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="system">System</option>
+                    </select>
+                    <button id="lang-toggle" aria-label="Change language">
+                    <i class="fa-solid fa-language"></i>
+                    </button>
+                </div>
+            </nav>
         </header>
-        
-        <!-- Zone principale -->
+
         <main>
-            <div class="container_main">
-                <!-- Section identité -->
-                <section id="identite" class="info_jonathan">
-                    <div class="info_une">
-                        <img src="images/profil_jona_m.jpg" alt="Ma photos profile" class="photo_profil">
-                        <div class="info_deux">
-                            <h1 class="nom">Jonathan Museme</h1>
-                            <div class="info_trois">
-                                <h1 class="profil">Développeur Web & Mobile</h1>
-                                <p class="presentation">Je suis un développeur des sites web et d'application mobile. 
-                                J’aime créer des sites modernes, rapides et interactifs.</p>
-                            </div>     
-                            <div class="liens_contact">
-                                <ul class="links">
-                                    <li><a href="https://github.com/Jonathan-024" target="_blank" class="github"><img src="images/github-mark.png" alt="Logo de GitHub" class="github_logo"></a></li>
-                                    <li><a href="mailto:1013jonathanm@gmail.com"><img src="images/email_logo.jpg" alt="Logo d'Email" class="email_logo"></a></li>
-                                    <!-- <li><a href="">Facebook</a></li> -->
-                                </ul>
-                            </div>                                                   
-                        </div>                    
+            <!-- About Section -->
+            <section id="about" class="section about">
+                <img src="images/ma_photo.jpg" alt="Jonathan's photo" class="profile-photo" />
+                <div class="about-content">
+                    <h1 class="name">Jonathan Museme</h1>
+                    <h2 class="title" data-lang="job">Web & Mobile Developer</h2>
+                    <p class="description" data-lang="bio">
+                    I am a developer specialized in creating fast and modern websites and mobile applications.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Jonathan-024" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github fa-xl"></i>
+                        </a>
+                        <a href="https://web.facebook.com/jonathan.museme.2025" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-xl"></i>
+                        </a>
+                        <a href="https://wa.me/243906779261" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp fa-xl"></i>
+                        </a>
                     </div>
+                </div>
+            </section>
 
+            <!-- Projects Section -->
+            <section id="projects" class="section projects">
+                <h2 class="section-title" data-lang="projects">Projects</h2>
+                <div class="project-list">
+                    <div class="project-item"></div>
+                    <div class="project-item"></div>
+                </div>
+            </section>
 
-                </section>
+            <!-- Skills Section -->
+            <section id="skills" class="section skills">
+                <h2 class="section-title" data-lang="skills">Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item"></div>
+                    <div class="skill-item"></div>
+                    <div class="skill-item"></div>
+                </div>
+            </section>
 
-                <!-- Section Projets -->
-                <section id="projets">
-                    <h1>Projets</h1>
-                    <div class="realisations">
-                        <article class="projet_un">
-
-                        </article>
-
-                        <article class="projet_deux">
-
-                        </article>
-                        
-                        <article class="projet_trois">
-
-                        </article>
-                        
-                        <article class="projet_quatre">
-
-                        </article>                        
-                    </div>                
-                </section>
-
-                <!-- Section Compétences -->
-                <section id="skills">
-                    <h1>Compétences</h1>
-                    <div class="connaissances">
-                        <article class="projet_un">
-
-                        </article>
-
-                        <article class="projet_deux">
-
-                        </article>
-                        
-                        <article class="projet_trois">
-
-                        </article>
-                        
-                        <article class="projet_quatre">
-
-                        </article>                        
-                    </div>         
-                </section>
-
-                <!-- Section Contact -->
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <form action="#" method="post">
-                        <input type="text" name="nom" placeholder="Votre nom" required />
-                        <input type="email" name="email" placeholder="Votre email" required />
-                        <textarea name="message" placeholder="Votre message" required></textarea>
-                        <button type="submit">Envoyer</button>
-                    </form>
-                </section>
-            </div>
+            <!-- Contact Section -->
+            <section id="contact" class="section contact">
+                <h2 class="section-title" data-lang="contact">Contact</h2>
+                <form action="https://formspree.io/f/meoknyar" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your name" data-lang-placeholder="name" required />
+                    <input type="email" name="email" placeholder="Your email" data-lang-placeholder="email" required />
+                    <textarea name="message" placeholder="Your message" data-lang-placeholder="message" required></textarea>
+                    <button type="submit" data-lang="send">Send</button>
+                </form>
+                <p id="form-message"></p>
+            </section>
         </main>
 
-        <!-- Pied de page -->
-        <footer>
-            <div class="container_footer">
-                <p>&copy; 2025 Jonathan Museme. Tous droits réservés.</p>
-            </div>
+        <footer class="footer">
+            <p data-lang="footer">&copy; 2025 Jonathan Museme. All rights reserved.</p>
         </footer>
     </body>
 </html>
