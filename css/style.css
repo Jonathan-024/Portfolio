@@ -176,10 +176,6 @@ body > * {
 }
 
 /* ✉️ Contact */
-.contact {
-    text-align: center;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
