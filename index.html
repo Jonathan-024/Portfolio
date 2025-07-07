@@ -22,15 +22,11 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <a href="#about" class="logo">Jonathan</a>
+                <a href="index.html" class="logo">Jonathan.com</a>
                 <div class="nav-links">
                     <a href="#projects" data-lang="projects" class="links">Projects</a>
                     <a href="#skills" data-lang="skills" class="links">Skills</a>
                     <a href="#contact" data-lang="contact" class="links">Contact</a>
-<<<<<<< HEAD
-                    <a href="#" class="cv-button" data-lang="resume">Resume</a>
-=======
->>>>>>> responsive
                     <select id="theme-switcher" aria-label="Theme mode">
                     <option value="light">Light</option>
                     <option value="dark">Dark</option>
@@ -71,8 +67,13 @@
             <section id="projects" class="section projects">
                 <h2 class="section-title" data-lang="projects">Projects</h2>
                 <div class="project-list">
-                    <div class="project-item"></div>
-                    <div class="project-item"></div>
+                    <ul>
+                        <li class="project-item">
+                            <a href="https://jonathan-024.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+                                MON PORTFOLIO
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -80,9 +81,11 @@
             <section id="skills" class="section skills">
                 <h2 class="section-title" data-lang="skills">Skills</h2>
                 <div class="skills-list">
-                    <div class="skill-item"></div>
-                    <div class="skill-item"></div>
-                    <div class="skill-item"></div>
+                    <ul>
+                        <li class="skill-item">HTML</li>
+                        <li class="skill-item">CSS</li>
+                        <li class="skill-item">GITHUB</li>
+                    </ul>
                 </div>
             </section>
 
@@ -95,11 +98,14 @@
                     <textarea name="message" placeholder="Your message" data-lang-placeholder="message" required></textarea>
                     <button type="submit" data-lang="send">Send</button>
                 </form>
+                <p id="form-message" class="form-message"></p>
             </section>
         </main>
 
         <footer class="footer">
-            <p data-lang="footer">&copy; 2025 Jonathan Museme. All rights reserved.</p>
+            <div class="container-footer">
+                <p data-lang="footer">&copy; 2025 Jonathan Museme. All rights reserved.</p>
+            </div>
         </footer>
     </body>
 </html>
