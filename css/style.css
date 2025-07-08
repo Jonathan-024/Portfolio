@@ -285,23 +285,20 @@ button[type="submit"] {
   }
 
   .about {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    display: block;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     padding: 2rem;
   }
 
   .about-content {
-    justify-content: center;
     text-align: center;
   }
 
   .profile-photo {
     width: 90px;
     height: 90px;
-    margin: auto;
   }
 
   .name {
