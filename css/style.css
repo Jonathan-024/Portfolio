@@ -285,7 +285,6 @@ button[type="submit"] {
   }
 
   .about {
-    display: block;
     margin: auto;
     flex-wrap: nowrap;
     padding: 1rem 0;
