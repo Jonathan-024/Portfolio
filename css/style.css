@@ -300,6 +300,7 @@ button[type="submit"] {
   .profile-photo {
     width: 90px;
     height: 90px;
+    margin: auto;
   }
 
   .name {
