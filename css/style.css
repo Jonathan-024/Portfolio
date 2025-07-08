@@ -286,18 +286,21 @@ button[type="submit"] {
 
   .about {
     display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
     padding: 2rem;
   }
 
-	.about-content {
-		text-align: center;
+  .about-content {
+    justify-content: center;
+    text-align: center;
   }
 
   .profile-photo {
     width: 90px;
     height: 90px;
+    margin: auto;
   }
 
   .name {
