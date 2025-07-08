@@ -286,9 +286,9 @@ button[type="submit"] {
 
   .about {
     display: block;
+    margin: auto;
     flex-wrap: nowrap;
-    justify-content: center;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .profile-photo {
