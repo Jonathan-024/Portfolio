@@ -286,11 +286,10 @@ button[type="submit"] {
 
   .about {
     display: block;
-    margin: auto;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 0.5rem;
   }
 
   .about-content {
