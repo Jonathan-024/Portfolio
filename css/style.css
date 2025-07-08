@@ -287,13 +287,8 @@ button[type="submit"] {
   .about {
     display: block;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: center;
-    padding: 2rem;
-  }
-
-  .about-content {
-    text-align: center;
+    padding: 1rem;
   }
 
   .profile-photo {
