@@ -286,13 +286,13 @@ button[type="submit"] {
 
   .about {
     display: block;
-    margin: auto;
-    padding: 1rem 0;
+    justify-content: center;
   }
 
   .profile-photo {
     width: 90px;
     height: 90px;
+    margin: auto;
   }
 
   .name {
