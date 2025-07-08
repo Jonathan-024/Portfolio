@@ -289,10 +289,11 @@ button[type="submit"] {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .about-content {
+    margin: auto;
     text-align: center;
   }
 
