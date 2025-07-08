@@ -288,7 +288,7 @@ button[type="submit"] {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .nav-links .links {
     display: none;
   }
