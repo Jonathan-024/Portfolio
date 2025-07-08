@@ -293,13 +293,13 @@ button[type="submit"] {
   }
 
   .about-content {
+    margin: auto;
     text-align: center;
   }
 
   .profile-photo {
     width: 90px;
     height: 90px;
-    margin: auto;
   }
 
   .name {
@@ -318,11 +318,6 @@ button[type="submit"] {
 
   .social-icons {
     margin-top: 1rem;
-    justify-content: center;
-  }
-
-  .social-icons a {
-    margin: auto;
     justify-content: center;
   }
 
