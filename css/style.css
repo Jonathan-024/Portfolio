@@ -289,7 +289,7 @@ button[type="submit"] {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 1rem;
   }
 
   .about-content {
@@ -303,6 +303,7 @@ button[type="submit"] {
 
   .name {
     font-size: 1.5rem;
+    top: 0;
   }
 
   .title {
