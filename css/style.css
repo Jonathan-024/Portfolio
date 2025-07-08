@@ -315,6 +315,11 @@ button[type="submit"] {
     line-height: 1.05;
   }
 
+  .social-icons {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
   .section-title {
     font-size: 1.3rem;
   }
