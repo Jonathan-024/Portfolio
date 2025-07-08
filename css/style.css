@@ -103,11 +103,14 @@ body > * {
 /* 📸 About Section */
 .about {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding: 2rem;
+}
+
+.about-responsive {
+  display: none;
 }
 
 .profile-photo {
@@ -159,6 +162,12 @@ body > * {
   width: clamp(630px, 100vw, 630px);
   margin: auto;
   padding: 2rem;
+}
+
+.projects h2, 
+.skills h2,
+.contact h2 {
+  text-align: center;
 }
 
 .section-title {
@@ -279,25 +288,40 @@ button[type="submit"] {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .nav-links .links {
     display: none;
   }
 
   .about {
+    display: none;
+  }
+
+  .about-responsive {
     display: block;
-    justify-content: center;
-    color: red;
+    max-width: 100%;
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .about-content {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
   }
 
   .profile-photo {
+    display: flex;
+    margin: 2rem auto;
+    margin-top: 2.5rem;
     width: 90px;
     height: 90px;
-    margin: auto;
   }
 
   .name {
     font-size: 1.5rem;
+    position: relative;
+    bottom: 3rem;
   }
 
   .title {
@@ -307,6 +331,16 @@ button[type="submit"] {
 
   .description {
     line-height: 1.05;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    margin: 0;
   }
 
   .section-title {
