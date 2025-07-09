@@ -229,7 +229,8 @@ button[type="submit"] {
 .form-msg {
   display: block;
   background-color: var(--form-color);
-  color: var(--text-color);
+  color: var(--primary-color);
+  font-size: 0.9rem;
   max-width: 25rem;
   margin: auto;
   padding: 0.8rem;
