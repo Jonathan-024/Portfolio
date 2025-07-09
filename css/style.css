@@ -228,16 +228,13 @@ button[type="submit"] {
 
 .form-msg {
   display: block;
-  width: 80%;
-  margin: auto;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-color);
   background-color: var(--form-color);
-  border-radius: 5px;
+  color: var(--text-color);
+  max-width: 25rem;
+  margin: auto;
+  padding: 0.8rem;
+  text-align: center;
 }
-
 
 /* 🦶 Footer */
 .footer {
