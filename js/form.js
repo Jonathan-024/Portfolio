@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (res.status === 200 || res.status === 0) {
-        msg.textContent = "✅ Merci ! Votre message a bien été envoyé.";
-        msg.style.color = "green";
+        msg.textContent = "Merci ! Votre message a bien été envoyé.";
+        msg.style.color = "#0a66c2";
         form.reset();
       } else {
         msg.textContent = "❌ Une erreur est survenue. Veuillez réessayer.";
