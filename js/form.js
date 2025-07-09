@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const msg = document.getElementById("form-message");
 
   form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // empêche le rechargement de page
+    e.preventDefault(); // Empêche la redirection classique
 
     const data = new FormData(form);
 
@@ -14,17 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: {
           Accept: "application/json",
         },
+        redirect: "manual", // Empêche le navigateur de suivre la redirection de Formspree
       });
 
-      if (res.ok) {
-        msg.textContent = "✅ Merci, votre message a bien été envoyé !";
+      if (res.status === 200 || res.status === 0) {
+        msg.textContent = "✅ Merci ! Votre message a bien été envoyé.";
+        msg.style.color = "green";
         form.reset();
       } else {
-        const json = await res.json();
-        msg.textContent = json.error || "❌ Une erreur est survenue.";
+        msg.textContent = "❌ Une erreur est survenue. Veuillez réessayer.";
+        msg.style.color = "red";
       }
-    } catch (err) {
-      msg.textContent = "❌ Erreur de réseau. Veuillez réessayer.";
+    } catch (error) {
+      msg.textContent = "❌ Erreur de réseau. Vérifiez votre connexion.";
+      msg.style.color = "red";
     }
   });
 });
